@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="ww.css">
+<link rel = "stylesheet" type = "text/css" href = "fab.css">
+<head>
+</head>
+<body >
+<div id = "header">
+
+<marquee behavior="scroll" direction="left" scrollamount="2.0" loop="infinite">
+<div class="w3-container w3-section">
+<div class="w3-tag w3-jumbo w3-orange">B</div>
+
+<div class="w3-tag w3-jumbo w3-green">I</div>
+<div class="w3-tag w3-jumbo w3-yellow">K</div>
+<div class="w3-tag w3-jumbo w3-green">E</div>
+
+<div class="w3-tag w3-jumbo w3-orange">G</div>
+<div class="w3-tag w3-jumbo w3-orange">A</div>
+<div class="w3-tag w3-jumbo w3-green">L</div>
+
+<div class="w3-tag w3-jumbo w3-yellow">L</div>
+<div class="w3-tag w3-jumbo w3-green">E</div>
+<div class="w3-tag w3-jumbo w3-orange">R</div>
+
+<div class="w3-tag w3-jumbo w3-orange">I</div>
+<div class="w3-tag w3-jumbo w3-orange">A</div>
+</div>
+
+</marquee>
+<img src = "finallogo.PNG" align="left" width = "150" height = "120"><br><br><br><br><br>
+<ul id = "ul1">
+
+	<li><a href = "home.html">HOME</a></li>
+    
+    <li><a href = "brand.html">BRAND</a></li>
+	
+<li><a href = "contact.html">CONTACT</a></li>
+	
+	<li><a href = "about.html">ABOUT</a></li>
+
+	<li><a href = "contact.html">SignUp</a></li>
+
+
+
+   
+</ul>
+
+<div class="w3-content w3-section" style="max-width:500px">
+
+
+<img class="mySlides" src="h1.png" width = "1260" height = "400px">
+
+<img class="mySlides" src="h2.png" width = "1260" height = "400px" >
+<img class="mySlides" src="h3.png" width = "1260" height = "400px">
+
+<img class="mySlides" src="h4.png" width = "1260" height = "400px">
+
+
+</div>
+
+
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+ 
+   myIndex++;
+    if (myIndex > x.length) {myIndex = 1}   
+ 
+    x[myIndex-1].style.display = "block";  
+ 
+   setTimeout(carousel, 4000);    
+}
+</script>
+
+</div>
+
+<div class="section">
+
+<marquee behavior="scroll" direction="right" scrollamount="6.0" loop="infinite"  height= "100%">
+
+<ul id = "ul2">
+
+	<li><img src = "shh1.jpg" width = "260" height = "180" id = "img1"></li>
+
+       <li><img src = "shh2.jpg"  width = "260" height = "180" id = "img1"></li>
+	
+<li><img src = "shh3.jpg"  width = "260" height = "180" id = "img1">
+</li>
+<li><img src = "shh4.jpg"  width = "260" height = "180" id = "img1"></li>
+
+</ul>
+
+</marquee>
+</div>
+
+<div id="footer">
+BikeGalleria welcomes You
+</div>
+
+
+
+</body>
+</html>
+
